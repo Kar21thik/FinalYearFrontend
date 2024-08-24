@@ -9,6 +9,5 @@ Currently, two official plugins are available:
 # FinalYearFrontend
 
 npm install react-router-dom
-npm install react-router-dom
 TO RUN THE CODE:
 npm run dev

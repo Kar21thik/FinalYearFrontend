@@ -1,8 +1,11 @@
+// UploadPage.jsx
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const UploadPage = () => {
   const [file, setFile] = useState(null);
   const [preview, setPreview] = useState(null);
+  const navigate = useNavigate();
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
@@ -18,8 +21,11 @@ const UploadPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (file) {
-      // Handle file upload logic here
-      console.log('Image submitted:', file);
+      // Example classification result
+      const classification = 'Disease Type A'; // Replace with actual result from your logic
+
+      // Navigate to ResultPage with image and classification
+      navigate('/result', { state: { image: preview, classification } });
     }
   };
 

@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -9,6 +10,7 @@ import Footer from "./components/Footer";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import UploadPage from './Upload'; // Correct the import path
+import ResultPage from './Result'; // Add import for ResultPage
 
 const App = () => {
   return (
@@ -27,7 +29,7 @@ const App = () => {
             </>
           } />
           <Route path="/upload" element={<UploadPage />} />
-          {/* Add other routes here as needed */}
+          <Route path="/result" element={<ResultPage />} /> {/* Add route for ResultPage */}
         </Routes>
       </div>
     </Router>

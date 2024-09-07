@@ -11,12 +11,11 @@ import user3 from "../assets/profile-pictures/user3.jpg";
 import user4 from "../assets/profile-pictures/user4.jpg";
 import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
-
 export const navItems = [
-  { label: "Home", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Developers", href: "#" },
-  { label: "Contact Us", href: "#" },
+  { label: "Home", href: "#home" },
+  { label: "Workflow", href: "#workflow" },
+  { label: "Developers", href: "#developers" },
+  { label: "Contact Us", href: "#contact-us" },
 ];
 
 export const testimonials = [

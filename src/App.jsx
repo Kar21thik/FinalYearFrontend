@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from "./components/Navbar";
@@ -6,7 +6,7 @@ import HeroSection from "./components/HeroSection";
 import FeatureSection from "./components/FeatureSection";
 import Workflow from "./components/Workflow";
 import Footer from "./components/Footer";
-import Pricing from "./components/Pricing";
+// import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import UploadPage from './Upload'; // Correct the import path
 

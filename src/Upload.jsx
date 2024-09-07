@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const UploadPage = () => {
   const [file, setFile] = useState(null);
   const [preview, setPreview] = useState(null);
+  const [result, setResult] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
@@ -18,14 +20,40 @@ const UploadPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (file) {
-      // Handle file upload logic here
-      console.log('Image submitted:', file);
+      const formData = new FormData();
+      formData.append('file', file);
+
+      setLoading(true); // Show loading indicator
+
+      fetch('http://127.0.0.1:5000/predict', {
+        method: 'POST',
+        body: formData,
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          setLoading(false); // Hide loading indicator
+          if (data.error) {
+            setResult(`Error: ${data.error}`);
+          } else {
+            setResult(`Classification Result: ${data.result}`);
+          }
+        })
+        .catch((error) => {
+          setLoading(false); // Hide loading indicator
+          setResult(`Error: ${error.message}`);
+        });
     }
   };
 
   const handleCancel = () => {
     setFile(null);
     setPreview(null);
+    setResult('');
   };
 
   return (
@@ -59,6 +87,8 @@ const UploadPage = () => {
             Submit
           </button>
         </div>
+        {loading && <div className="text-white text-center">Loading...</div>}
+        {result && <div className="text-white text-center mt-4">{result}</div>}
       </form>
     </div>
   );

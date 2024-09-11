@@ -14,6 +14,18 @@ const Navbar = () => {
     window.location.href = "/";
   };
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const targetSection = document.querySelector(href);
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop - 80, // Adjusting for navbar height
+        behavior: "smooth",
+      });
+    }
+    setMobileDrawerOpen(false);
+  };
+
   return (
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <div className="container px-4 mx-auto relative lg:text-sm">
@@ -25,27 +37,28 @@ const Navbar = () => {
               alt="Logo"
               onClick={handleLogoClick}
             />
-            <span className="text-xl tracking-tight cursor-pointer" onClick={handleLogoClick}>
-            Retinal DCUDL
+            <span
+              className="text-xl tracking-tight cursor-pointer"
+              onClick={handleLogoClick}
+            >
+              Retinal DCUDL
             </span>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.href}>{item.label}</a>
+                <a
+                  href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
+                  className="cursor-pointer"
+                >
+                  {item.label}
+                </a>
               </li>
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            {/* <a href="#" className="py-2 px-3 border rounded-md">
-              Sign In
-            </a>
-            <a
-              href="#"
-              className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
-            >
-              Create an account
-            </a> */}
+            {/* Additional links or buttons */}
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>
@@ -58,21 +71,16 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
-                  <a href={item.href}>{item.label}</a>
+                  <a
+                    href={item.href}
+                    onClick={(e) => handleNavClick(e, item.href)}
+                    className="cursor-pointer"
+                  >
+                    {item.label}
+                  </a>
                 </li>
               ))}
             </ul>
-            <div className="flex space-x-6">
-              {/* <a href="#" className="py-2 px-3 border rounded-md">
-                Sign In
-              </a>
-              <a
-                href="#"
-                className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800"
-              >
-                Create an account
-              </a> */}
-            </div>
           </div>
         )}
       </div>
@@ -81,4 +89,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

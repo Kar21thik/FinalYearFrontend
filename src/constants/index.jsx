@@ -48,15 +48,15 @@ export const testimonials = [
 export const features = [
   {
     icon: <BotMessageSquare />,
-    text: "Add items",
+    text: "Perfomance",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "Achieved the performance of the model up to 99.45%, which is a significant improvement in the accuracy of the model.",
   },
   {
     icon: <Fingerprint />,
-    text: "Add items",
+    text: "Sensitive Disease Classification",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Our model is capable of classifying sensitive diseases such as Drusen , Normal , CNV , DME.",
   },
   {
     icon: <ShieldHalf />,
@@ -83,30 +83,28 @@ export const features = [
       "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
   },
 ];
-
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Month 1: Requirement Analysis",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Conducted an in-depth analysis to gather relevant datasets for retinal disease classification. Defined comprehensive project requirements and set the foundation for model development.",
   },
   {
-    title: "Review code without worry",
+    title: "Month 2: Model Selection",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Evaluated and selected appropriate deep learning models, including VGG19 and Transformer, for effective retinal disease classification. Focused on optimizing model performance and accuracy.",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Month 3: Frontend Development",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Developed and designed the frontend interface using React, ensuring seamless integration with the backend API. Implemented user-friendly features and a responsive design for an optimal user experience.",
   },
   {
-    title: "Share work in minutes",
+    title: "Month 4: Testing and Evaluation",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Performed rigorous testing and evaluation of the classification model. Achieved high accuracy metrics, with scores.",
   },
 ];
-
 export const pricingOptions = [
   {
     title: "Free",

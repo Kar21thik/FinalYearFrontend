@@ -27,7 +27,7 @@ const UploadPage = () => {
 
       setLoading(true); // Show loading indicator
 
-      fetch('http://127.0.0.1:5000/predict', {
+      fetch('http://localhost:8080/predict', {
         method: 'POST',
         body: formData,
       })

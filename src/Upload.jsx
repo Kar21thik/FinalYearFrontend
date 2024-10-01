@@ -32,6 +32,7 @@ const UploadPage = () => {
         body: formData,
       })
         .then((response) => {
+          console.log(response.data);
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
@@ -39,10 +40,11 @@ const UploadPage = () => {
         })
         .then((data) => {
           setLoading(false); // Hide loading indicator
+          console.log(data.data);
           if (data.error) {
             setResult(`Error: ${data.error}`);
           } else {
-            setResult(`Classification Result: ${data.result}`);
+            setResult(`Classification Result: ${data.data.result}`);
           }
         })
         .catch((error) => {

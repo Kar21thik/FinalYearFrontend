@@ -27,7 +27,7 @@ const UploadPage = () => {
 
       setLoading(true); // Show loading indicator
 
-      fetch('http://127.0.0.1:5000/predict', {
+      fetch('https://fa41e985-4baf-48a0-99b2-721051c645e4-00-1r48cc6qeabf7.janeway.replit.dev:8000/predict', {
         method: 'POST',
         body: formData,
       })

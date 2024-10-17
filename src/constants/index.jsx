@@ -1,5 +1,5 @@
 import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
+// import { BatteryCharging } from "lucide-react";
 import { Fingerprint } from "lucide-react";
 import { ShieldHalf } from "lucide-react";
 import { PlugZap } from "lucide-react";
@@ -9,8 +9,9 @@ import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
 import user3 from "../assets/profile-pictures/user3.jpg";
 import user4 from "../assets/profile-pictures/user4.jpg";
-import user5 from "../assets/profile-pictures/user5.jpg";
-import user6 from "../assets/profile-pictures/user6.jpg";
+// import user5 from "../assets/profile-pictures/user5.jpg";
+// import user6 from "../assets/profile-pictures/user6.jpg";
+
 export const navItems = [
   { label: "Home", href: "#home" },
   { label: "Workflow", href: "#workflow" },
@@ -44,6 +45,9 @@ export const testimonials = [
     text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
   }
 ];
+
+
+
 BotMessageSquare
 export const features = [
   {

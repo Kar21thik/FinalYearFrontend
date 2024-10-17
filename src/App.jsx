@@ -1,5 +1,5 @@
 // src/App.jsx
-import React from 'react';
+// import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from "./components/Navbar";
@@ -9,7 +9,7 @@ import Workflow from "./components/Workflow";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import UploadPage from "./Upload"; // Importing from the root level
-import ResultPage from "./Result";
+// import ResultPage from "./Result";
 import ResearchPaper from './components/Researchpaper';// Import the ResearchPaper component
 
 const App = () => {
@@ -28,8 +28,8 @@ const App = () => {
             </>
           } />
           <Route path="/upload" element={<UploadPage />} />
-          <Route path="/result" element={<ResultPage />} />
-          <Route path="/research-paper" element={<ResearchPaper />} /> {/* Add this route */}
+          {/* <Route path="/result" element={<ResultPage />} /> */}
+          <Route path="/researchpaper" element={<ResearchPaper />} /> {/* Add this route */}
         </Routes>
       </div>
     </Router>

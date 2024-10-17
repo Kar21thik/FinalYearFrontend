@@ -1,5 +1,5 @@
 // components/ResearchPaper.jsx
-import React from 'react';
+// import React from 'react';
 
 const ResearchPaper = () => {
   const pdfLinks = [

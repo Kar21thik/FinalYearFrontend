@@ -1,10 +1,11 @@
+// components/HeroSection.jsx
 import { Link } from 'react-router-dom';
 import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
 
 const HeroSection = () => {
   return (
-    <div id = "home" className="flex flex-col items-center mt-6 lg:mt-20">
+    <div id="home" className="flex flex-col items-center mt-6 lg:mt-20">
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         Retinal Disease Classification Using
         <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
@@ -28,9 +29,12 @@ const HeroSection = () => {
         >
           Get Started
         </Link>
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9859538/" target="_blank" rel="noopener noreferrer" className="py-3 px-4 mx-3 rounded-md border">
+        <Link
+          to="/research-paper"
+          className="py-3 px-4 mx-3 rounded-md border text-blue-500 hover:underline"
+        >
           View Research Papers
-        </a>
+        </Link>
       </div>
       <div className="flex mt-10 justify-center">
         <video

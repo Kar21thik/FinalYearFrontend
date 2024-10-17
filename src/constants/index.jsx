@@ -44,44 +44,45 @@ export const testimonials = [
     text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
   }
 ];
-
+BotMessageSquare
 export const features = [
   {
     icon: <BotMessageSquare />,
-    text: "Perfomance",
+    text: "Model Performance",
     description:
-      "Achieved the performance of the model up to 99.45%, which is a significant improvement in the accuracy of the model.",
-  },
-  {
-    icon: <Fingerprint />,
-    text: "Sensitive Disease Classification",
-    description:
-      "Our model is capable of classifying sensitive diseases such as Drusen , Normal , CNV , DME.",
-  },
-  {
-    icon: <ShieldHalf />,
-    text: "Add items",
-    description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
-  },
-  {
-    icon: <BatteryCharging />,
-    text: "Add items",
-    description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+      "Achieved an exceptional classification accuracy of 99.70% using the Transformer model, outperforming existing models such as VGG19 and ResNet.",
   },
   {
     icon: <PlugZap />,
-    text: "Add items",
+    text: "Xception Model Accuracy",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "Our Xception model achieved a notable accuracy of 99.51%, enhancing the classification of retinal diseases with robust precision and recall scores.",
+  },
+  {
+    icon: <ShieldHalf />,
+    text: "Precision & Recall",
+    description:
+      "With a precision and recall of 99.70%, our model demonstrates high reliability in classifying retinal diseases such as CNV, DME, and Drusen.",
+  },
+  {
+    icon: <ShieldHalf />,
+    text: "Sensitive Disease Classification",
+    description:
+      "Successfully classified sensitive retinal diseases such as Drusen, Normal, CNV, and DME with high accuracy and sensitivity.",
+  },
+  {
+    icon: <Fingerprint />,
+    text: "Comprehensive Metrics",
+    description:
+      "The model's AUC stands at 1.0, with a Cohen's Kappa of 0.996, showing near-perfect agreement and excellent classification specificity of 99.89%.",
   },
   {
     icon: <GlobeLock />,
-    text: "Add items",
+    text: "Advanced Diagnostic Precision",
     description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
-  },
+"The Transformer model achieves near-perfect accuracy with an AUC of 1.0 and a Cohen's Kappa of 0.996. Its 99.70% sensitivity and 99.89% specificity highlight its precision in detecting retinal diseases and minimizing misdiagnosis."  }
+  
+  
 ];
 export const checklistItems = [
   {

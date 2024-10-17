@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import UploadPage from "./Upload"; // Importing from the root level
 // import ResultPage from "./Result";
-import ResearchPaper from './components/Researchpaper';// Import the ResearchPaper component
+import ResearchPaper from './components/ResearchPaper';// Import the ResearchPaper component
 
 const App = () => {
   return (

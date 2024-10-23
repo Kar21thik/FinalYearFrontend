@@ -1,57 +1,90 @@
-// components/ResearchPaper.jsx
 import React from 'react';
 
 const ResearchPaper = () => {
   const pdfLinks = [
     {
-      title: "Research Paper 1",
-      viewUrl: "https://www.mdpi.com/2227-9032/11/2/212/pdf", // Direct PDF link
-      downloadUrl: "https://www.mdpi.com/2227-9032/11/2/212/pdf", // Use the same URL for download
+      title: "Base Research Paper",
+      viewUrl: "https://www.mdpi.com/2227-9032/11/2/212/pdf", // Base Paper Link
     },
     {
-      title: "Research Paper 2",
-      viewUrl: "link-to-paper-2.pdf", // Replace with actual PDF link
-      downloadUrl: "link-to-paper-2.pdf",
+      title: "Project Paper",
+      viewUrl: "https://link-to-our-project-paper.pdf", // Replace with actual project paper link
     },
     {
-      title: "Research Paper 3",
-      viewUrl: "link-to-paper-3.pdf", // Replace with actual PDF link
-      downloadUrl: "link-to-paper-3.pdf",
+      title: "Transformer Paper",
+      viewUrl: "https://link-to-paper-1.pdf", // Replace with actual PDF link
     },
     {
-      title: "Research Paper 4",
-      viewUrl: "link-to-paper-4.pdf", // Replace with actual PDF link
-      downloadUrl: "link-to-paper-4.pdf",
+      title: "Additional Paper 2",
+      viewUrl: "https://link-to-paper-2.pdf", // Replace with actual PDF link
     },
   ];
 
   return (
     <div className="p-6">
-      <h2 className="text-3xl font-bold mb-4">Research Papers</h2>
-      <ul className="list-none">
-        {pdfLinks.map((paper, index) => (
-          <li key={index} className="mb-4 flex items-center justify-between">
-            <span className="text-blue-500 hover:underline">{paper.title}</span>
-            <div>
-              <a
-                href={paper.viewUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600 mx-2"
-              >
-                View
-              </a>
-              <a
-                href={paper.downloadUrl}
-                download
-                className="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600"
-              >
-                Download
-              </a>
-            </div>
-          </li>
-        ))}
-      </ul>
+      <h2 className="text-3xl font-bold mb-6">Research Papers</h2>
+
+      {/* Base Paper Section */}
+      <div className="mb-6">
+        <div className="flex justify-between items-center">
+          <h3 className="text-xl font-semibold">Base Research Paper</h3>
+          <a
+            href={pdfLinks[0].viewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-orange-500 to-black text-white py-2 px-4 rounded-md hover:from-orange-600 hover:to-black"
+          >
+            Download PDF
+          </a>
+        </div>
+        <hr className="my-4 border-t-2 border-gray-300" />
+      </div>
+
+      {/* Our Project Paper Section */}
+      <div className="mb-6">
+        <div className="flex justify-between items-center">
+          <h3 className="text-lg font-semibold">Project Paper</h3>
+          <a
+            href={pdfLinks[1].viewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-orange-500 to-black text-white py-2 px-4 rounded-md hover:from-orange-600 hover:to-black"
+          >
+            Download PDF
+          </a>
+        </div>
+        <hr className="my-4 border-t-2 border-gray-300" />
+      </div>
+
+      {/* Additional Papers */}
+      <div className="mb-6">
+        <div className="flex justify-between items-center">
+          <h3 className="text-lg font-semibold">Transformer Model Paper</h3>
+          <a
+            href={pdfLinks[2].viewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-orange-500 to-black text-white py-2 px-4 rounded-md hover:from-orange-600 hover:to-black"
+          >
+            Download PDF
+          </a>
+        </div>
+        <hr className="my-4 border-t-2 border-gray-300" />
+      </div>
+
+      <div className="mb-6">
+        <div className="flex justify-between items-center">
+          <h3 className="text-lg font-semibold">Additional Paper 2</h3>
+          <a
+            href={pdfLinks[3].viewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-orange-500 to-black text-white py-2 px-4 rounded-md hover:from-orange-600 hover:to-black"
+          >
+            Download PDF
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

@@ -31,7 +31,7 @@ const HeroSection = () => {
         </Link>
         <Link
           to="/research-paper"
-          className="py-3 px-4 mx-3 rounded-md border text-blue-500 hover:underline"
+          className="py-3 px-4 mx-3 rounded-md border text-white border-orange-500 hover:underline"
         >
           View Research Papers
         </Link>

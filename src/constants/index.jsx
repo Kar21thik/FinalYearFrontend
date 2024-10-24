@@ -20,30 +20,27 @@ export const navItems = [
 
 export const testimonials = [
   {
+    user: "Dr. Pallavi K.N",
+    role: "Team Mentor",
+  },
+  {
     user: "Ganesh Nayak",
-    role: "Back-End Developer", // Updated to role
-    image: user1,
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
+    role: "Team Member",
   },
   {
     user: "K.R. Nachiketha",
-    role: "Back-End Developer", // Updated to role
-    image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life.",
+    role: "Team Member",
   },
   {
     user: "Karthik",
-    role: "Front-End Developer", // Updated to role
-    image: user3,
-    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
+    role: "Team Member",
   },
   {
     user: "Kritarth",
-    role: "Back-End Developer", // Updated to role
-    image: user4,
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
+    role: "Team Member",
   }
 ];
+
 BotMessageSquare
 export const features = [
   {
